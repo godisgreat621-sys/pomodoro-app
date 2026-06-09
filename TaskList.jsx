@@ -6,7 +6,6 @@ const TaskList = ({ tasks, onToggle, onDelete }) => {
       {tasks.map(task => (
         <li 
           key={task.id} 
-          className="flex items-center justify-between bg-white/5 p-3 rounded-xl border border-white/5 hover:bg-white/10 transition group"
           className="flex items-center justify-between bg-black/30 p-3 rounded-xl border border-gray-700 hover:bg-black/40 transition group"
         >
           <div className="flex items-center gap-3 cursor-pointer flex-1" onClick={() => onToggle(task.id)}>
